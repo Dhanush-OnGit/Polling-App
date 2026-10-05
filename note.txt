@@ -1,0 +1,35 @@
+for custom user creation :
+in settings:-
+    AUTH_USER_MODEL = 'poll.CustomUser'
+
+AbstractUser
+------------
+AbstractUser is a Django class used to create a custom user model while keeping Django's built-in user features.
+
+Simple definition
+
+AbstractUser = Django's default User model structure that you can extend with your own fields.
+
+DRF Generic Views
+------------------
+Generic Views in Django REST Framework are pre-built views for common API operations, 
+so you don't have to write all the CRUD logic yourself.
+
+Simple definition
+    DRF Generic Views = reusable API views that provide common CRUD operations.
+
+DRF Generic Views = reusable API views that provide common CRUD operations.
+
+| Generic View                   | Purpose               | HTTP method            |
+| ------------------------------ | --------------------- | ---------------------- |
+| `ListAPIView`                  | Get multiple objects  | GET                    |
+| `CreateAPIView`                | Create an object      | POST                   |
+| `RetrieveAPIView`              | Get one object        | GET                    |
+| `UpdateAPIView`                | Update an object      | PUT/PATCH              |
+| `DestroyAPIView`               | Delete an object      | DELETE                 |
+| `ListCreateAPIView`            | List + Create         | GET, POST              |
+| `RetrieveUpdateAPIView`        | Get + Update          | GET, PUT/PATCH         |
+| `RetrieveDestroyAPIView`       | Get + Delete          | GET, DELETE            |
+| `RetrieveUpdateDestroyAPIView` | Get + Update + Delete | GET, PUT/PATCH, DELETE |
+
+
